@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841BAEE919137494005955A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841BAEE819137494005955A8 /* Foundation.framework */; };
+		841BAEEB19137494005955A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841BAEEA19137494005955A8 /* CoreGraphics.framework */; };
+		841BAEED19137494005955A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841BAEEC19137494005955A8 /* UIKit.framework */; };
+		841BAEF319137494005955A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841BAEF119137494005955A8 /* InfoPlist.strings */; };
+		841BAEF519137494005955A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BAEF419137494005955A8 /* main.m */; };
+		841BAEF919137494005955A8 /* JKLABAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BAEF819137494005955A8 /* JKLABAppDelegate.m */; };
+		841BAEFC19137494005955A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841BAEFA19137494005955A8 /* Main.storyboard */; };
+		841BAEFF19137494005955A8 /* JKLABFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BAEFE19137494005955A8 /* JKLABFirstViewController.m */; };
+		841BAF0219137494005955A8 /* JKLABSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BAF0119137494005955A8 /* JKLABSecondViewController.m */; };
+		841BAF0419137494005955A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF0319137494005955A8 /* Images.xcassets */; };
+		841BAF0B19137495005955A8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841BAF0A19137495005955A8 /* XCTest.framework */; };
+		841BAF0C19137495005955A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841BAEE819137494005955A8 /* Foundation.framework */; };
+		841BAF0D19137495005955A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841BAEEC19137494005955A8 /* UIKit.framework */; };
+		841BAF1519137495005955A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF1319137495005955A8 /* InfoPlist.strings */; };
+		841BAF1719137495005955A8 /* taikoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BAF1619137495005955A8 /* taikoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		841BAF0E19137495005955A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841BAEDD19137494005955A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 841BAEE419137494005955A8;
+			remoteInfo = taiko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		841BAEE519137494005955A8 /* taiko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taiko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		841BAEE819137494005955A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		841BAEEA19137494005955A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		841BAEEC19137494005955A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		841BAEF019137494005955A8 /* taiko-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "taiko-Info.plist"; sourceTree = "<group>"; };
+		841BAEF219137494005955A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		841BAEF419137494005955A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		841BAEF619137494005955A8 /* taiko-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "taiko-Prefix.pch"; sourceTree = "<group>"; };
+		841BAEF719137494005955A8 /* JKLABAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKLABAppDelegate.h; sourceTree = "<group>"; };
+		841BAEF819137494005955A8 /* JKLABAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKLABAppDelegate.m; sourceTree = "<group>"; };
+		841BAEFB19137494005955A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		841BAEFD19137494005955A8 /* JKLABFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKLABFirstViewController.h; sourceTree = "<group>"; };
+		841BAEFE19137494005955A8 /* JKLABFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKLABFirstViewController.m; sourceTree = "<group>"; };
+		841BAF0019137494005955A8 /* JKLABSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKLABSecondViewController.h; sourceTree = "<group>"; };
+		841BAF0119137494005955A8 /* JKLABSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKLABSecondViewController.m; sourceTree = "<group>"; };
+		841BAF0319137494005955A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		841BAF0919137495005955A8 /* taikoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taikoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		841BAF0A19137495005955A8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		841BAF1219137495005955A8 /* taikoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "taikoTests-Info.plist"; sourceTree = "<group>"; };
+		841BAF1419137495005955A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		841BAF1619137495005955A8 /* taikoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = taikoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		841BAEE219137494005955A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841BAEEB19137494005955A8 /* CoreGraphics.framework in Frameworks */,
+				841BAEED19137494005955A8 /* UIKit.framework in Frameworks */,
+				841BAEE919137494005955A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841BAF0619137495005955A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841BAF0B19137495005955A8 /* XCTest.framework in Frameworks */,
+				841BAF0D19137495005955A8 /* UIKit.framework in Frameworks */,
+				841BAF0C19137495005955A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		841BAEDC19137494005955A8 = {
+			isa = PBXGroup;
+			children = (
+				841BAEEE19137494005955A8 /* taiko */,
+				841BAF1019137495005955A8 /* taikoTests */,
+				841BAEE719137494005955A8 /* Frameworks */,
+				841BAEE619137494005955A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		841BAEE619137494005955A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841BAEE519137494005955A8 /* taiko.app */,
+				841BAF0919137495005955A8 /* taikoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		841BAEE719137494005955A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				841BAEE819137494005955A8 /* Foundation.framework */,
+				841BAEEA19137494005955A8 /* CoreGraphics.framework */,
+				841BAEEC19137494005955A8 /* UIKit.framework */,
+				841BAF0A19137495005955A8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		841BAEEE19137494005955A8 /* taiko */ = {
+			isa = PBXGroup;
+			children = (
+				841BAEF719137494005955A8 /* JKLABAppDelegate.h */,
+				841BAEF819137494005955A8 /* JKLABAppDelegate.m */,
+				841BAEFA19137494005955A8 /* Main.storyboard */,
+				841BAEFD19137494005955A8 /* JKLABFirstViewController.h */,
+				841BAEFE19137494005955A8 /* JKLABFirstViewController.m */,
+				841BAF0019137494005955A8 /* JKLABSecondViewController.h */,
+				841BAF0119137494005955A8 /* JKLABSecondViewController.m */,
+				841BAF0319137494005955A8 /* Images.xcassets */,
+				841BAEEF19137494005955A8 /* Supporting Files */,
+			);
+			path = taiko;
+			sourceTree = "<group>";
+		};
+		841BAEEF19137494005955A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841BAEF019137494005955A8 /* taiko-Info.plist */,
+				841BAEF119137494005955A8 /* InfoPlist.strings */,
+				841BAEF419137494005955A8 /* main.m */,
+				841BAEF619137494005955A8 /* taiko-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841BAF1019137495005955A8 /* taikoTests */ = {
+			isa = PBXGroup;
+			children = (
+				841BAF1619137495005955A8 /* taikoTests.m */,
+				841BAF1119137495005955A8 /* Supporting Files */,
+			);
+			path = taikoTests;
+			sourceTree = "<group>";
+		};
+		841BAF1119137495005955A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841BAF1219137495005955A8 /* taikoTests-Info.plist */,
+				841BAF1319137495005955A8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		841BAEE419137494005955A8 /* taiko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841BAF1A19137495005955A8 /* Build configuration list for PBXNativeTarget "taiko" */;
+			buildPhases = (
+				841BAEE119137494005955A8 /* Sources */,
+				841BAEE219137494005955A8 /* Frameworks */,
+				841BAEE319137494005955A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = taiko;
+			productName = taiko;
+			productReference = 841BAEE519137494005955A8 /* taiko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		841BAF0819137495005955A8 /* taikoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841BAF1D19137495005955A8 /* Build configuration list for PBXNativeTarget "taikoTests" */;
+			buildPhases = (
+				841BAF0519137495005955A8 /* Sources */,
+				841BAF0619137495005955A8 /* Frameworks */,
+				841BAF0719137495005955A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				841BAF0F19137495005955A8 /* PBXTargetDependency */,
+			);
+			name = taikoTests;
+			productName = taikoTests;
+			productReference = 841BAF0919137495005955A8 /* taikoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		841BAEDD19137494005955A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JKLAB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = jklab;
+				TargetAttributes = {
+					841BAF0819137495005955A8 = {
+						TestTargetID = 841BAEE419137494005955A8;
+					};
+				};
+			};
+			buildConfigurationList = 841BAEE019137494005955A8 /* Build configuration list for PBXProject "taiko" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 841BAEDC19137494005955A8;
+			productRefGroup = 841BAEE619137494005955A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				841BAEE419137494005955A8 /* taiko */,
+				841BAF0819137495005955A8 /* taikoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		841BAEE319137494005955A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841BAF0419137494005955A8 /* Images.xcassets in Resources */,
+				841BAEF319137494005955A8 /* InfoPlist.strings in Resources */,
+				841BAEFC19137494005955A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841BAF0719137495005955A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841BAF1519137495005955A8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841BAEE119137494005955A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841BAEF519137494005955A8 /* main.m in Sources */,
+				841BAF0219137494005955A8 /* JKLABSecondViewController.m in Sources */,
+				841BAEFF19137494005955A8 /* JKLABFirstViewController.m in Sources */,
+				841BAEF919137494005955A8 /* JKLABAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841BAF0519137495005955A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841BAF1719137495005955A8 /* taikoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		841BAF0F19137495005955A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 841BAEE419137494005955A8 /* taiko */;
+			targetProxy = 841BAF0E19137495005955A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		841BAEF119137494005955A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841BAEF219137494005955A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		841BAEFA19137494005955A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841BAEFB19137494005955A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		841BAF1319137495005955A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841BAF1419137495005955A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		841BAF1819137495005955A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		841BAF1919137495005955A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		841BAF1B19137495005955A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "taiko/taiko-Prefix.pch";
+				INFOPLIST_FILE = "taiko/taiko-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		841BAF1C19137495005955A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "taiko/taiko-Prefix.pch";
+				INFOPLIST_FILE = "taiko/taiko-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		841BAF1E19137495005955A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/taiko.app/taiko";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "taiko/taiko-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "taikoTests/taikoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		841BAF1F19137495005955A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/taiko.app/taiko";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "taiko/taiko-Prefix.pch";
+				INFOPLIST_FILE = "taikoTests/taikoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841BAEE019137494005955A8 /* Build configuration list for PBXProject "taiko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841BAF1819137495005955A8 /* Debug */,
+				841BAF1919137495005955A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841BAF1A19137495005955A8 /* Build configuration list for PBXNativeTarget "taiko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841BAF1B19137495005955A8 /* Debug */,
+				841BAF1C19137495005955A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		841BAF1D19137495005955A8 /* Build configuration list for PBXNativeTarget "taikoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841BAF1E19137495005955A8 /* Debug */,
+				841BAF1F19137495005955A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 841BAEDD19137494005955A8 /* Project object */;
+}
