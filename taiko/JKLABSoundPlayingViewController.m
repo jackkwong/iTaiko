@@ -15,6 +15,9 @@
 
 @implementation JKLABSoundPlayingViewController
 
+
+dispatch_queue_t queue;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    queue = dispatch_queue_create("com.jklab.taiko", NULL);
     // Do any additional setup after loading the view.
 }
 
@@ -50,11 +54,25 @@
 
 - (IBAction)hitRed:(id)sender {
     NSLog(@"RED!");
-    [self playSound:@"203343__klemmy__124-taiko-rim" type:@"wav"];
+    
+
+    
+    dispatch_async(queue, ^{
+        NSLog(@"HIT RED!");
+        [self playSound:@"203343__klemmy__124-taiko-rim" type:@"wav"];
+    });
+    
 }
 - (IBAction)hitBlue:(id)sender {
     NSLog(@"BLUE!");
-    [self playSound:@"203346__klemmy__125-tsuzumi" type:@"wav"];
+    
+
+    
+    dispatch_async(queue, ^{
+        NSLog(@"HIT BLUE!");
+        [self playSound:@"203346__klemmy__125-tsuzumi" type:@"wav"];
+    });
+    
 }
 
 /*

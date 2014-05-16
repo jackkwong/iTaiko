@@ -27,6 +27,10 @@
 		841BAF661924CECD005955A8 /* 203346__klemmy__125-tsuzumi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF621924CECD005955A8 /* 203346__klemmy__125-tsuzumi.wav */; };
 		841BAF671924CECD005955A8 /* 203347__klemmy__120-djembe-mute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF631924CECD005955A8 /* 203347__klemmy__120-djembe-mute.wav */; };
 		841BAF681924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF641924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav */; };
+		841BAF6C19261059005955A8 /* blue-square-button-md.png in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF6A19261059005955A8 /* blue-square-button-md.png */; };
+		841BAF6D19261059005955A8 /* red-square-button-md.png in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF6B19261059005955A8 /* red-square-button-md.png */; };
+		841BAF71192611BF005955A8 /* btn_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF6F192611BF005955A8 /* btn_blue.png */; };
+		841BAF72192611BF005955A8 /* btn_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF70192611BF005955A8 /* btn_red.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		841BAF621924CECD005955A8 /* 203346__klemmy__125-tsuzumi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "203346__klemmy__125-tsuzumi.wav"; sourceTree = "<group>"; };
 		841BAF631924CECD005955A8 /* 203347__klemmy__120-djembe-mute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "203347__klemmy__120-djembe-mute.wav"; sourceTree = "<group>"; };
 		841BAF641924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "203350__klemmy__121-djembe-slap.wav"; sourceTree = "<group>"; };
+		841BAF6A19261059005955A8 /* blue-square-button-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-square-button-md.png"; sourceTree = "<group>"; };
+		841BAF6B19261059005955A8 /* red-square-button-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-square-button-md.png"; sourceTree = "<group>"; };
+		841BAF6F192611BF005955A8 /* btn_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_blue.png; sourceTree = "<group>"; };
+		841BAF70192611BF005955A8 /* btn_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_red.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,7 @@
 		841BAEEE19137494005955A8 /* taiko */ = {
 			isa = PBXGroup;
 			children = (
+				841BAF6E19261061005955A8 /* image */,
 				841BAF691925C32E005955A8 /* sound */,
 				841BAEF719137494005955A8 /* JKLABAppDelegate.h */,
 				841BAEF819137494005955A8 /* JKLABAppDelegate.m */,
@@ -180,6 +189,17 @@
 				841BAF641924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav */,
 			);
 			name = sound;
+			sourceTree = "<group>";
+		};
+		841BAF6E19261061005955A8 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				841BAF6A19261059005955A8 /* blue-square-button-md.png */,
+				841BAF6B19261059005955A8 /* red-square-button-md.png */,
+				841BAF6F192611BF005955A8 /* btn_blue.png */,
+				841BAF70192611BF005955A8 /* btn_red.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,11 +280,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				841BAF681924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav in Resources */,
+				841BAF6C19261059005955A8 /* blue-square-button-md.png in Resources */,
 				841BAF671924CECD005955A8 /* 203347__klemmy__120-djembe-mute.wav in Resources */,
 				841BAF661924CECD005955A8 /* 203346__klemmy__125-tsuzumi.wav in Resources */,
+				841BAF71192611BF005955A8 /* btn_blue.png in Resources */,
 				841BAF651924CECD005955A8 /* 203343__klemmy__124-taiko-rim.wav in Resources */,
 				841BAF0419137494005955A8 /* Images.xcassets in Resources */,
 				841BAEF319137494005955A8 /* InfoPlist.strings in Resources */,
+				841BAF6D19261059005955A8 /* red-square-button-md.png in Resources */,
+				841BAF72192611BF005955A8 /* btn_red.png in Resources */,
 				841BAEFC19137494005955A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
