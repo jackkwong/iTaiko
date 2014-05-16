@@ -22,6 +22,11 @@
 		841BAF0D19137495005955A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841BAEEC19137494005955A8 /* UIKit.framework */; };
 		841BAF1519137495005955A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF1319137495005955A8 /* InfoPlist.strings */; };
 		841BAF1719137495005955A8 /* taikoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BAF1619137495005955A8 /* taikoTests.m */; };
+		841BAF2219139AE1005955A8 /* JKLABSoundPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BAF2119139AE1005955A8 /* JKLABSoundPlayingViewController.m */; };
+		841BAF651924CECD005955A8 /* 203343__klemmy__124-taiko-rim.wav in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF611924CECD005955A8 /* 203343__klemmy__124-taiko-rim.wav */; };
+		841BAF661924CECD005955A8 /* 203346__klemmy__125-tsuzumi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF621924CECD005955A8 /* 203346__klemmy__125-tsuzumi.wav */; };
+		841BAF671924CECD005955A8 /* 203347__klemmy__120-djembe-mute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF631924CECD005955A8 /* 203347__klemmy__120-djembe-mute.wav */; };
+		841BAF681924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF641924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,12 @@
 		841BAF1219137495005955A8 /* taikoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "taikoTests-Info.plist"; sourceTree = "<group>"; };
 		841BAF1419137495005955A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		841BAF1619137495005955A8 /* taikoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = taikoTests.m; sourceTree = "<group>"; };
+		841BAF2019139AE1005955A8 /* JKLABSoundPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLABSoundPlayingViewController.h; sourceTree = "<group>"; };
+		841BAF2119139AE1005955A8 /* JKLABSoundPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLABSoundPlayingViewController.m; sourceTree = "<group>"; };
+		841BAF611924CECD005955A8 /* 203343__klemmy__124-taiko-rim.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "203343__klemmy__124-taiko-rim.wav"; sourceTree = "<group>"; };
+		841BAF621924CECD005955A8 /* 203346__klemmy__125-tsuzumi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "203346__klemmy__125-tsuzumi.wav"; sourceTree = "<group>"; };
+		841BAF631924CECD005955A8 /* 203347__klemmy__120-djembe-mute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "203347__klemmy__120-djembe-mute.wav"; sourceTree = "<group>"; };
+		841BAF641924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "203350__klemmy__121-djembe-slap.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +126,12 @@
 		841BAEEE19137494005955A8 /* taiko */ = {
 			isa = PBXGroup;
 			children = (
+				841BAF691925C32E005955A8 /* sound */,
 				841BAEF719137494005955A8 /* JKLABAppDelegate.h */,
 				841BAEF819137494005955A8 /* JKLABAppDelegate.m */,
 				841BAEFA19137494005955A8 /* Main.storyboard */,
+				841BAF2019139AE1005955A8 /* JKLABSoundPlayingViewController.h */,
+				841BAF2119139AE1005955A8 /* JKLABSoundPlayingViewController.m */,
 				841BAEFD19137494005955A8 /* JKLABFirstViewController.h */,
 				841BAEFE19137494005955A8 /* JKLABFirstViewController.m */,
 				841BAF0019137494005955A8 /* JKLABSecondViewController.h */,
@@ -155,6 +169,17 @@
 				841BAF1319137495005955A8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841BAF691925C32E005955A8 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				841BAF611924CECD005955A8 /* 203343__klemmy__124-taiko-rim.wav */,
+				841BAF621924CECD005955A8 /* 203346__klemmy__125-tsuzumi.wav */,
+				841BAF631924CECD005955A8 /* 203347__klemmy__120-djembe-mute.wav */,
+				841BAF641924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav */,
+			);
+			name = sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +259,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841BAF681924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav in Resources */,
+				841BAF671924CECD005955A8 /* 203347__klemmy__120-djembe-mute.wav in Resources */,
+				841BAF661924CECD005955A8 /* 203346__klemmy__125-tsuzumi.wav in Resources */,
+				841BAF651924CECD005955A8 /* 203343__klemmy__124-taiko-rim.wav in Resources */,
 				841BAF0419137494005955A8 /* Images.xcassets in Resources */,
 				841BAEF319137494005955A8 /* InfoPlist.strings in Resources */,
 				841BAEFC19137494005955A8 /* Main.storyboard in Resources */,
@@ -256,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				841BAEF519137494005955A8 /* main.m in Sources */,
+				841BAF2219139AE1005955A8 /* JKLABSoundPlayingViewController.m in Sources */,
 				841BAF0219137494005955A8 /* JKLABSecondViewController.m in Sources */,
 				841BAEFF19137494005955A8 /* JKLABFirstViewController.m in Sources */,
 				841BAEF919137494005955A8 /* JKLABAppDelegate.m in Sources */,
