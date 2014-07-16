@@ -31,6 +31,7 @@
 		841BAF6D19261059005955A8 /* red-square-button-md.png in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF6B19261059005955A8 /* red-square-button-md.png */; };
 		841BAF71192611BF005955A8 /* btn_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF6F192611BF005955A8 /* btn_blue.png */; };
 		841BAF72192611BF005955A8 /* btn_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF70192611BF005955A8 /* btn_red.png */; };
+		84FE281F19765EBD0096A9B5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FE281E19765EBD0096A9B5 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		841BAF6B19261059005955A8 /* red-square-button-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-square-button-md.png"; sourceTree = "<group>"; };
 		841BAF6F192611BF005955A8 /* btn_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_blue.png; sourceTree = "<group>"; };
 		841BAF70192611BF005955A8 /* btn_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_red.png; sourceTree = "<group>"; };
+		84FE281E19765EBD0096A9B5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FE281F19765EBD0096A9B5 /* AVFoundation.framework in Frameworks */,
 				841BAEEB19137494005955A8 /* CoreGraphics.framework in Frameworks */,
 				841BAEED19137494005955A8 /* UIKit.framework in Frameworks */,
 				841BAEE919137494005955A8 /* Foundation.framework in Frameworks */,
@@ -123,6 +126,7 @@
 		841BAEE719137494005955A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84FE281E19765EBD0096A9B5 /* AVFoundation.framework */,
 				841BAEE819137494005955A8 /* Foundation.framework */,
 				841BAEEA19137494005955A8 /* CoreGraphics.framework */,
 				841BAEEC19137494005955A8 /* UIKit.framework */,
@@ -517,6 +521,7 @@
 				841BAF1C19137495005955A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		841BAF1D19137495005955A8 /* Build configuration list for PBXNativeTarget "taikoTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +530,7 @@
 				841BAF1F19137495005955A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,14 +9,17 @@
 #import "JKLABSoundPlayingViewController.h"
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 @interface JKLABSoundPlayingViewController ()
-
+@property(nonatomic, strong) AVAudioPlayer *player1;
+@property(nonatomic, strong) AVAudioPlayer *player2;
 @end
 
 @implementation JKLABSoundPlayingViewController
 
+@synthesize player1;
+@synthesize player2;
 
-dispatch_queue_t queue;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,8 +33,9 @@ dispatch_queue_t queue;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    queue = dispatch_queue_create("com.jklab.taiko", NULL);
     // Do any additional setup after loading the view.
+    player1 = [self makeAudioPlayerFromFileName:@"203343__klemmy__124-taiko-rim" fileType:@"wav"];
+    player2 = [self makeAudioPlayerFromFileName:@"203346__klemmy__125-tsuzumi" fileType:@"wav"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,39 +44,32 @@ dispatch_queue_t queue;
     // Dispose of any resources that can be recreated.
 }
 
--(void) playSound: (NSString *)fileName type: (NSString *)type{
-    NSString *soundPath = [[NSBundle mainBundle] pathForResource:fileName ofType:type];
-    NSURL *url = [NSURL fileURLWithPath:soundPath];
-    
-    SystemSoundID soundID;
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &soundID);
-    AudioServicesPlaySystemSound (soundID);
-    //[soundPath release];
-    //NSLog(@"soundpath retain count: %d", [soundPath retainCount]);
+-(AVAudioPlayer *)makeAudioPlayerFromFileName:(NSString *)fileName fileType:(NSString *)fileType
+{
+    AVAudioPlayer *player;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:fileType];
+    NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    [player prepareToPlay];
+    return player;
 }
+
 
 
 - (IBAction)hitRed:(id)sender {
     NSLog(@"RED!");
-    
+    [player1 stop];
+    player1.currentTime = 0;
+    [player1 play];
 
-    
-    dispatch_async(queue, ^{
-        NSLog(@"HIT RED!");
-        [self playSound:@"203343__klemmy__124-taiko-rim" type:@"wav"];
-    });
-    
 }
 - (IBAction)hitBlue:(id)sender {
     NSLog(@"BLUE!");
-    
+   
+    [player2 stop];
+    player2.currentTime = 0;
+    [player2 play];
 
-    
-    dispatch_async(queue, ^{
-        NSLog(@"HIT BLUE!");
-        [self playSound:@"203346__klemmy__125-tsuzumi" type:@"wav"];
-    });
-    
 }
 
 /*
