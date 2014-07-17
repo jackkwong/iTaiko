@@ -72,6 +72,10 @@
     tuneData = [JKLABTuneData createTuneDataMap];
     tune = tuneData[tuneKey];
     
+    if (tune == nil) {
+        return nil;
+    }
+    
     
     fileName = tune.fileName;
     fileType = tune.fileType;

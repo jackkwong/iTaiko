@@ -35,6 +35,12 @@
 		84FE28281977863D0096A9B5 /* JKLABTuneData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE28271977863D0096A9B5 /* JKLABTuneData.m */; };
 		84FE282B197788D10096A9B5 /* JKLABTune.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE282A197788D10096A9B5 /* JKLABTune.m */; };
 		84FE282E1977A37A0096A9B5 /* JKLABTuneSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE282D1977A37A0096A9B5 /* JKLABTuneSettingTableViewController.m */; };
+		84FE28351977C2230096A9B5 /* 4832__zajo__drum07.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84FE282F1977C2230096A9B5 /* 4832__zajo__drum07.wav */; };
+		84FE28361977C2230096A9B5 /* 84480__zgump__drum-fx-4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84FE28301977C2230096A9B5 /* 84480__zgump__drum-fx-4.wav */; };
+		84FE28371977C2230096A9B5 /* 111202__corrodedmaster__bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84FE28311977C2230096A9B5 /* 111202__corrodedmaster__bass.wav */; };
+		84FE28381977C2230096A9B5 /* 178668__hanbaal__snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84FE28321977C2230096A9B5 /* 178668__hanbaal__snare.wav */; };
+		84FE28391977C2230096A9B5 /* 191634__dwsd__jhd-prc-6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84FE28331977C2230096A9B5 /* 191634__dwsd__jhd-prc-6.wav */; };
+		84FE283A1977C2230096A9B5 /* 232014__seidhepriest__ambassador-6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84FE28341977C2230096A9B5 /* 232014__seidhepriest__ambassador-6.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +92,12 @@
 		84FE282A197788D10096A9B5 /* JKLABTune.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLABTune.m; sourceTree = "<group>"; };
 		84FE282C1977A37A0096A9B5 /* JKLABTuneSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLABTuneSettingTableViewController.h; sourceTree = "<group>"; };
 		84FE282D1977A37A0096A9B5 /* JKLABTuneSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLABTuneSettingTableViewController.m; sourceTree = "<group>"; };
+		84FE282F1977C2230096A9B5 /* 4832__zajo__drum07.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4832__zajo__drum07.wav; sourceTree = "<group>"; };
+		84FE28301977C2230096A9B5 /* 84480__zgump__drum-fx-4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "84480__zgump__drum-fx-4.wav"; sourceTree = "<group>"; };
+		84FE28311977C2230096A9B5 /* 111202__corrodedmaster__bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 111202__corrodedmaster__bass.wav; sourceTree = "<group>"; };
+		84FE28321977C2230096A9B5 /* 178668__hanbaal__snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 178668__hanbaal__snare.wav; sourceTree = "<group>"; };
+		84FE28331977C2230096A9B5 /* 191634__dwsd__jhd-prc-6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "191634__dwsd__jhd-prc-6.wav"; sourceTree = "<group>"; };
+		84FE28341977C2230096A9B5 /* 232014__seidhepriest__ambassador-6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "232014__seidhepriest__ambassador-6.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +212,12 @@
 		841BAF691925C32E005955A8 /* sound */ = {
 			isa = PBXGroup;
 			children = (
+				84FE282F1977C2230096A9B5 /* 4832__zajo__drum07.wav */,
+				84FE28301977C2230096A9B5 /* 84480__zgump__drum-fx-4.wav */,
+				84FE28311977C2230096A9B5 /* 111202__corrodedmaster__bass.wav */,
+				84FE28321977C2230096A9B5 /* 178668__hanbaal__snare.wav */,
+				84FE28331977C2230096A9B5 /* 191634__dwsd__jhd-prc-6.wav */,
+				84FE28341977C2230096A9B5 /* 232014__seidhepriest__ambassador-6.wav */,
 				841BAF611924CECD005955A8 /* 203343__klemmy__124-taiko-rim.wav */,
 				84FE2829197788D10096A9B5 /* JKLABTune.h */,
 				84FE282A197788D10096A9B5 /* JKLABTune.m */,
@@ -299,11 +317,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				841BAF681924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav in Resources */,
+				84FE283A1977C2230096A9B5 /* 232014__seidhepriest__ambassador-6.wav in Resources */,
 				841BAF6C19261059005955A8 /* blue-square-button-md.png in Resources */,
+				84FE28371977C2230096A9B5 /* 111202__corrodedmaster__bass.wav in Resources */,
+				84FE28351977C2230096A9B5 /* 4832__zajo__drum07.wav in Resources */,
 				841BAF671924CECD005955A8 /* 203347__klemmy__120-djembe-mute.wav in Resources */,
 				841BAF661924CECD005955A8 /* 203346__klemmy__125-tsuzumi.wav in Resources */,
 				841BAF71192611BF005955A8 /* btn_blue.png in Resources */,
+				84FE28381977C2230096A9B5 /* 178668__hanbaal__snare.wav in Resources */,
+				84FE28391977C2230096A9B5 /* 191634__dwsd__jhd-prc-6.wav in Resources */,
 				841BAF651924CECD005955A8 /* 203343__klemmy__124-taiko-rim.wav in Resources */,
+				84FE28361977C2230096A9B5 /* 84480__zgump__drum-fx-4.wav in Resources */,
 				841BAF0419137494005955A8 /* Images.xcassets in Resources */,
 				841BAEF319137494005955A8 /* InfoPlist.strings in Resources */,
 				841BAF6D19261059005955A8 /* red-square-button-md.png in Resources */,
