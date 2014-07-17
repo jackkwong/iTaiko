@@ -14,8 +14,6 @@
 		841BAEF519137494005955A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BAEF419137494005955A8 /* main.m */; };
 		841BAEF919137494005955A8 /* JKLABAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BAEF819137494005955A8 /* JKLABAppDelegate.m */; };
 		841BAEFC19137494005955A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841BAEFA19137494005955A8 /* Main.storyboard */; };
-		841BAEFF19137494005955A8 /* JKLABFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BAEFE19137494005955A8 /* JKLABFirstViewController.m */; };
-		841BAF0219137494005955A8 /* JKLABSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BAF0119137494005955A8 /* JKLABSecondViewController.m */; };
 		841BAF0419137494005955A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF0319137494005955A8 /* Images.xcassets */; };
 		841BAF0B19137495005955A8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841BAF0A19137495005955A8 /* XCTest.framework */; };
 		841BAF0C19137495005955A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841BAEE819137494005955A8 /* Foundation.framework */; };
@@ -32,6 +30,11 @@
 		841BAF71192611BF005955A8 /* btn_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF6F192611BF005955A8 /* btn_blue.png */; };
 		841BAF72192611BF005955A8 /* btn_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 841BAF70192611BF005955A8 /* btn_red.png */; };
 		84FE281F19765EBD0096A9B5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FE281E19765EBD0096A9B5 /* AVFoundation.framework */; };
+		84FE282219777FD20096A9B5 /* JKLABUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE282119777FD20096A9B5 /* JKLABUserConfig.m */; };
+		84FE2825197785610096A9B5 /* JKLABTuneSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE2824197785610096A9B5 /* JKLABTuneSelectionTableViewController.m */; };
+		84FE28281977863D0096A9B5 /* JKLABTuneData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE28271977863D0096A9B5 /* JKLABTuneData.m */; };
+		84FE282B197788D10096A9B5 /* JKLABTune.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE282A197788D10096A9B5 /* JKLABTune.m */; };
+		84FE282E1977A37A0096A9B5 /* JKLABTuneSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE282D1977A37A0096A9B5 /* JKLABTuneSettingTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +59,6 @@
 		841BAEF719137494005955A8 /* JKLABAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKLABAppDelegate.h; sourceTree = "<group>"; };
 		841BAEF819137494005955A8 /* JKLABAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKLABAppDelegate.m; sourceTree = "<group>"; };
 		841BAEFB19137494005955A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		841BAEFD19137494005955A8 /* JKLABFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKLABFirstViewController.h; sourceTree = "<group>"; };
-		841BAEFE19137494005955A8 /* JKLABFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKLABFirstViewController.m; sourceTree = "<group>"; };
-		841BAF0019137494005955A8 /* JKLABSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKLABSecondViewController.h; sourceTree = "<group>"; };
-		841BAF0119137494005955A8 /* JKLABSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKLABSecondViewController.m; sourceTree = "<group>"; };
 		841BAF0319137494005955A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		841BAF0919137495005955A8 /* taikoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taikoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841BAF0A19137495005955A8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -77,6 +76,16 @@
 		841BAF6F192611BF005955A8 /* btn_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_blue.png; sourceTree = "<group>"; };
 		841BAF70192611BF005955A8 /* btn_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_red.png; sourceTree = "<group>"; };
 		84FE281E19765EBD0096A9B5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		84FE282019777FD20096A9B5 /* JKLABUserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLABUserConfig.h; sourceTree = "<group>"; };
+		84FE282119777FD20096A9B5 /* JKLABUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLABUserConfig.m; sourceTree = "<group>"; };
+		84FE2823197785610096A9B5 /* JKLABTuneSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLABTuneSelectionTableViewController.h; sourceTree = "<group>"; };
+		84FE2824197785610096A9B5 /* JKLABTuneSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLABTuneSelectionTableViewController.m; sourceTree = "<group>"; };
+		84FE28261977863D0096A9B5 /* JKLABTuneData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLABTuneData.h; sourceTree = "<group>"; };
+		84FE28271977863D0096A9B5 /* JKLABTuneData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLABTuneData.m; sourceTree = "<group>"; };
+		84FE2829197788D10096A9B5 /* JKLABTune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLABTune.h; sourceTree = "<group>"; };
+		84FE282A197788D10096A9B5 /* JKLABTune.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLABTune.m; sourceTree = "<group>"; };
+		84FE282C1977A37A0096A9B5 /* JKLABTuneSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLABTuneSettingTableViewController.h; sourceTree = "<group>"; };
+		84FE282D1977A37A0096A9B5 /* JKLABTuneSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLABTuneSettingTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,13 +152,17 @@
 				841BAEF719137494005955A8 /* JKLABAppDelegate.h */,
 				841BAEF819137494005955A8 /* JKLABAppDelegate.m */,
 				841BAEFA19137494005955A8 /* Main.storyboard */,
+				84FE282C1977A37A0096A9B5 /* JKLABTuneSettingTableViewController.h */,
+				84FE282D1977A37A0096A9B5 /* JKLABTuneSettingTableViewController.m */,
+				84FE2823197785610096A9B5 /* JKLABTuneSelectionTableViewController.h */,
+				84FE2824197785610096A9B5 /* JKLABTuneSelectionTableViewController.m */,
 				841BAF2019139AE1005955A8 /* JKLABSoundPlayingViewController.h */,
 				841BAF2119139AE1005955A8 /* JKLABSoundPlayingViewController.m */,
-				841BAEFD19137494005955A8 /* JKLABFirstViewController.h */,
-				841BAEFE19137494005955A8 /* JKLABFirstViewController.m */,
-				841BAF0019137494005955A8 /* JKLABSecondViewController.h */,
-				841BAF0119137494005955A8 /* JKLABSecondViewController.m */,
+				84FE28261977863D0096A9B5 /* JKLABTuneData.h */,
+				84FE28271977863D0096A9B5 /* JKLABTuneData.m */,
 				841BAF0319137494005955A8 /* Images.xcassets */,
+				84FE282019777FD20096A9B5 /* JKLABUserConfig.h */,
+				84FE282119777FD20096A9B5 /* JKLABUserConfig.m */,
 				841BAEEF19137494005955A8 /* Supporting Files */,
 			);
 			path = taiko;
@@ -188,6 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				841BAF611924CECD005955A8 /* 203343__klemmy__124-taiko-rim.wav */,
+				84FE2829197788D10096A9B5 /* JKLABTune.h */,
+				84FE282A197788D10096A9B5 /* JKLABTune.m */,
 				841BAF621924CECD005955A8 /* 203346__klemmy__125-tsuzumi.wav */,
 				841BAF631924CECD005955A8 /* 203347__klemmy__120-djembe-mute.wav */,
 				841BAF641924CECD005955A8 /* 203350__klemmy__121-djembe-slap.wav */,
@@ -312,10 +327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FE2825197785610096A9B5 /* JKLABTuneSelectionTableViewController.m in Sources */,
 				841BAEF519137494005955A8 /* main.m in Sources */,
 				841BAF2219139AE1005955A8 /* JKLABSoundPlayingViewController.m in Sources */,
-				841BAF0219137494005955A8 /* JKLABSecondViewController.m in Sources */,
-				841BAEFF19137494005955A8 /* JKLABFirstViewController.m in Sources */,
+				84FE282219777FD20096A9B5 /* JKLABUserConfig.m in Sources */,
+				84FE282B197788D10096A9B5 /* JKLABTune.m in Sources */,
+				84FE282E1977A37A0096A9B5 /* JKLABTuneSettingTableViewController.m in Sources */,
+				84FE28281977863D0096A9B5 /* JKLABTuneData.m in Sources */,
 				841BAEF919137494005955A8 /* JKLABAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

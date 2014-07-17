@@ -10,6 +10,11 @@
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
+
+#import "JKLABUserConfig.h"
+#import "JKLABTuneData.h"
+#import "JKLABTune.h"
+
 @interface JKLABSoundPlayingViewController ()
 @property(nonatomic, strong) AVAudioPlayer *player1;
 @property(nonatomic, strong) AVAudioPlayer *player2;
@@ -34,14 +39,46 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    player1 = [self makeAudioPlayerFromFileName:@"203343__klemmy__124-taiko-rim" fileType:@"wav"];
-    player2 = [self makeAudioPlayerFromFileName:@"203346__klemmy__125-tsuzumi" fileType:@"wav"];
+    player1 = [self makeAudioPlayerForTune:KEY_TUNE1];
+    if ( player1 == nil ) {
+        player1 = [self makeAudioPlayerFromFileName:@"203343__klemmy__124-taiko-rim" fileType:@"wav"];
+    }
+    player2 = [self makeAudioPlayerForTune:KEY_TUNE2];
+    if ( player2 == nil ) {
+        player2 = [self makeAudioPlayerFromFileName:@"203346__klemmy__125-tsuzumi" fileType:@"wav"];
+    }
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(AVAudioPlayer *)makeAudioPlayerForTune:(NSString *)tuneName
+{
+    NSString *tuneKey;
+    NSDictionary *tuneData;
+    JKLABTune *tune;
+    AVAudioPlayer *player;
+    NSString *fileName, *fileType;
+    
+    tuneKey = [JKLABUserConfig valueForKey:tuneName];
+    
+    if (tuneKey == nil) {
+        return nil;
+    }
+    
+    tuneData = [JKLABTuneData createTuneDataMap];
+    tune = tuneData[tuneKey];
+    
+    
+    fileName = tune.fileName;
+    fileType = tune.fileType;
+    
+    player = [self makeAudioPlayerFromFileName:fileName fileType:fileType];
+    
+    return player;
 }
 
 -(AVAudioPlayer *)makeAudioPlayerFromFileName:(NSString *)fileName fileType:(NSString *)fileType
