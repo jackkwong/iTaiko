@@ -8,4 +8,6 @@ to tell you I have started this project to make this possible.
 
 If you find there're some missing features, feel free to do a feature request by opening a new issue ;)
 
+And if you want to collaborate, welcome! It would be very great if you will create a issue specifying what feature you want to add.
+
 [cool_vid]: https://www.youtube.com/watch?v=9-HPctwq0Aw "【太鼓の達人13】 蛻変 ～transformation～(裏譜面)"
