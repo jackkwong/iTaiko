@@ -77,6 +77,10 @@
     tuneKey = tuneKeys[indexPath.row];
     tune = tuneData[tuneKey];
     
+    if ([tuneKey isEqualToString:[JKLABUserConfig valueForKey:tuneKeyToConfigure] ]) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    
     cell.textLabel.text = tune.tuneName;
     
     return cell;

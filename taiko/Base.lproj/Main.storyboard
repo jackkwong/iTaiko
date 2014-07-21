@@ -30,8 +30,28 @@
                         <sections>
                             <tableViewSection headerTitle="演奏版面" id="qr5-vh-m7r">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Nbk-p8-bX9" style="IBUITableViewCellStyleDefault" id="n3Y-AK-JPV">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Eeg-rd-jy2" style="IBUITableViewCellStyleDefault" id="EOK-mD-ezM">
                                         <rect key="frame" x="0.0" y="86" width="320" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EOK-mD-ezM" id="fwi-fk-jXc">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="傳統版面" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eeg-rd-jy2">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="fdW-jo-YVS" kind="push" id="djQ-nw-McA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Nbk-p8-bX9" style="IBUITableViewCellStyleDefault" id="n3Y-AK-JPV">
+                                        <rect key="frame" x="0.0" y="166" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n3Y-AK-JPV" id="Fum-N4-IHo">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="79"/>
@@ -51,7 +71,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="3KJ-49-VPO" style="IBUITableViewCellStyleDefault" id="9Mg-vh-seU">
-                                        <rect key="frame" x="0.0" y="166" width="320" height="80"/>
+                                        <rect key="frame" x="0.0" y="246" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Mg-vh-seU" id="pg3-5W-rtS">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="79"/>
@@ -75,7 +95,7 @@
                             <tableViewSection headerTitle="設定" id="itY-gK-n93">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="De5-33-dcR" style="IBUITableViewCellStyleDefault" id="LIz-D8-g8s">
-                                        <rect key="frame" x="0.0" y="268" width="320" height="80"/>
+                                        <rect key="frame" x="0.0" y="348" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LIz-D8-g8s" id="Dxa-hB-boL">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="79"/>
@@ -345,11 +365,57 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="mhb-iM-Le6"/>
-                    <navigationItem key="navigationItem" id="T1b-cA-NeM"/>
+                    <navigationItem key="navigationItem" title="四方版面" id="T1b-cA-NeM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcT-d5-mBH" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="58" y="-669"/>
+        </scene>
+        <!--Sound Playing View Controller - First-->
+        <scene sceneID="Ljp-3L-rG2">
+            <objects>
+                <viewController title="First" id="fdW-jo-YVS" customClass="JKLABSoundPlayingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BaV-Kk-itC"/>
+                        <viewControllerLayoutGuide type="bottom" id="xoE-Mg-2O2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dk0-DO-imc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0K-pd-RJQ">
+                                <rect key="frame" x="0.0" y="70" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="hitBlue:" destination="fdW-jo-YVS" eventType="touchDown" id="tmE-sK-I8H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mah-bp-X96">
+                                <rect key="frame" x="0.0" y="372" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="hitBlue:" destination="fdW-jo-YVS" eventType="touchDown" id="zLn-bl-5tF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjr-nn-B1Z">
+                                <rect key="frame" x="0.0" y="171" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98431378599999997" green="0.31764706970000001" blue="0.019607843829999999" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <action selector="hitRed:" destination="fdW-jo-YVS" eventType="touchDown" id="udM-Kn-Hun"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="0aO-7D-59Y"/>
+                    <navigationItem key="navigationItem" title="傳統版面" id="nA3-4T-jlJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tW5-zg-P7U" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-525" y="-739"/>
         </scene>
     </scenes>
     <resources>
